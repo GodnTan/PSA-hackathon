@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    
+    content="width=device-width,
+                         initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet"
+          href="loginpage.css">
+</head>
+
+<body>
+    <div>
+        <nav>   
+            <ul>   
+                <li class ="items"><img class="searchicon" src="photo_6109500325141527094_x.jpg"></li>
+                <li class="items"><a href="#">Home</I></a></li>   
+                <li class="items"><a href="#">Contact Us</a></li>   
+                <li class="items"><a href="#">FeedBack</a></li>   
+                <li class="items" onclick="window.location.href='billing.html';"><a href="#">Logout</a></li>   
+             </ul>   
+          </nav>
+        </div>
+
+    <p>
+        <h1 class="heading">LOGIN PAGE</h1>
+        <h2 class="title">Login & Registration Form</h2>
+    </p>
+ 
+    <!-- container div -->
+    <div class="container">
+ 
+        <!-- upper button section to select
+             the login or signup form -->
+        <div class="slider"></div>
+        <div class="btn">
+            <button class="login">Login</button>
+            <button class="signup">Signup</button>
+        </div>
+ 
+        <!-- Form section that contains the
+             login and the signup form -->
+        <div class="form-section">
+ 
+            <!-- login form -->
+            <div class="login-box">
+                <input type="email"
+                       class="email-login ele"
+                       id="email-login"
+                       placeholder="youremail@email.com"
+                       >
+                <input type="password"
+                       class="password-login ele"
+                       id="password-login"
+                       placeholder="password"
+                    >
+                <button class="clkbtn" onclick ="auth()">Login</button>
+            </div>
+ 
+            <!-- signup form -->
+            <div class="signup-box">
+                <input type="email"
+                       class="email-signup ele"
+                       id="email-signup"
+                       placeholder="youremail@email.com">
+                <input type="password"
+                       class="password-signup ele"
+                       id="password-signup"
+                       placeholder="password">
+                <input type="password"
+                       class="password-signup ele"
+                       id="password-signup"
+                       placeholder="Confirm password">
+                       <button class="clkbtn" onclick="register()">Signup</button>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
