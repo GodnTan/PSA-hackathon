@@ -27,7 +27,7 @@ function auth() {
 
     if (matchedUser) {
         alert("Login Successful");
-        window.location.href = "lawyer.html";
+        window.location.href = "youtube.html";
     } else {
         alert("Invalid Information");
         return;
